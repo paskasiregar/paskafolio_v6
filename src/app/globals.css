@@ -168,3 +168,53 @@ body {
 .email-button span {
   font-size: 1.5rem; /* Adjust for the email icon */
 }
+
+.footer-project-section {
+  position: relative;
+  height: 400px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.moving-background {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+}
+
+.image-track img {
+  width: 100%; /* Adjust image width to fill column */
+  object-fit: cover;
+}
+
+.column-upwards {
+  animation: moveUpwards 20s linear infinite;
+}
+
+.column-downwards {
+  animation: moveDownwards 20s linear infinite;
+}
+
+@keyframes moveUpwards {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes moveDownwards {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.footer-line {
+  height: 1px;
+  background-color: #333333;
+  width: 100%;
+  margin: 20px 0;
+}
