@@ -23,7 +23,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "🚀 Paska | Portfolio",
   description:
-    "Debora Paskarina's Product Portfolio. Paska is a Head of Product at Nematix Sdn Bhd, Malaysia.",
+    "Debora Paskarina&apos;s Product Portfolio. Paska is a Head of Product at Nematix Sdn Bhd, Malaysia.",
   icons: {
     icon: "/asset/p-logo.png",
   },
