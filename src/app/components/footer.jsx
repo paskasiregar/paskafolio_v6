@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa"; // Font Awesome icon for LinkedIn
-import { Homemade_Apple } from "@next/font/google"; // Import the Homemade Apple font
+import { Homemade_Apple } from "next/font/google"; // Import the Homemade Apple font
 
-// Import the font used in the header
 const homemadeApple = Homemade_Apple({
   weight: "400",
   subsets: ["latin"],

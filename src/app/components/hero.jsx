@@ -1,5 +1,5 @@
 import React from "react";
-import NameCard from "./NameCard";
+import NameCard from "./nameCard";
 import SecButton from "./secButton";
 
 const Hero = () => {

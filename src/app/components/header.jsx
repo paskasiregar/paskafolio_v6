@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Button from "./button";
-import { Homemade_Apple } from "@next/font/google";
+import { Homemade_Apple } from "next/font/google";
 
 const homemadeApple = Homemade_Apple({
   weight: "400",
