@@ -171,7 +171,7 @@ body {
 
 .footer-project-section {
   position: relative;
-  height: 400px; /* Adjust the height as needed */
+  height: 300px; /* Adjust the height as needed */
   overflow: hidden;
 }
 
@@ -186,29 +186,31 @@ body {
   object-fit: cover;
 }
 
+/* Infinite upward animation for columns 1 and 3 */
 .column-upwards {
-  animation: moveUpwards 20s linear infinite;
+  animation: moveUpwards 30s linear infinite;
 }
 
+/* Infinite downward animation for column 2 */
 .column-downwards {
-  animation: moveDownwards 20s linear infinite;
+  animation: moveDownwards 30s linear infinite;
 }
 
 @keyframes moveUpwards {
   0% {
-    transform: translateY(100%);
+    transform: translateY(100%); /* Start offscreen */
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-100%); /* Move fully offscreen to the top */
   }
 }
 
 @keyframes moveDownwards {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-100%); /* Start offscreen above */
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(100%); /* Move fully offscreen to the bottom */
   }
 }
 

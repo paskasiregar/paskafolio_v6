@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="py-12 bg-black text-white items-center justify-center">
       {/* "Have a Project in Mind?" Section */}
-      <div className="footer-project-section relative text-white py-32 px-8">
+      <div className="footer-project-section relative text-white px-8">
         {/* Background Moving Images with 3 Columns */}
         <div className="absolute inset-0 z-0 overflow-hidden grid grid-cols-3 gap-4 moving-background">
           {/* Column 1 (Moving Up) */}
@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
 
           {/* Semi-transparent overlay */}
-          <div className="absolute inset-0 bg-black opacity-70"></div>
+          <div className="absolute inset-0 bg-black opacity-80"></div>
         </div>
 
         {/* Content Section */}
