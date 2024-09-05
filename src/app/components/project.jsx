@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Chip from "./Chip"; // Import the Chip component
+import Chip from "./chip";
 import "../project.css";
 
 const Project = ({ project }) => {

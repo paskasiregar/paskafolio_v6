@@ -1,5 +1,5 @@
 import React from "react";
-import Chip from "./Chip"; // Assuming you have a Chip component for badges
+import Chip from "./chip";
 
 const Experience = ({ title, location, company, timeframe }) => {
   return (
