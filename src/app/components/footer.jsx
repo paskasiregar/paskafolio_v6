@@ -80,9 +80,9 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto relative z-10 flex flex-col justify-center items-start">
           <h2 className="text-4xl font-bold mb-4">Have a Project in Mind?</h2>
           <p className="text-lg mb-6 max-w-[64%]">
-            I&apos;d love to hear from you! Whether you&apos;re ready to
-            kickstart a new website or revamp an existing one, I&apos;m here to
-            help turn your ideas into reality.
+            I would love to hear from you! Whether you are ready to kickstart a
+            new website or revamp an existing one, I am here to help turn your
+            ideas into reality.
           </p>
           <Link href="mailto:ask@hellopaska.com" className="email-button">
             <button
