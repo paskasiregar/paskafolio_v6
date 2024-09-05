@@ -1,0 +1,94 @@
+.project-wrapper {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+}
+
+.green-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #00ffb9;
+  border-radius: 50%;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.project-images {
+  flex: 2;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-details {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  border-top: 1px solid #333; /* Adds a top border to the section */
+}
+
+.project-details li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0; /* Spacing between rows */
+  border-bottom: 1px solid #333; /* Adds a bottom border under each row */
+}
+
+.project-details li span {
+  font-weight: bold;
+  color: #888888; /* Lighter grey for labels */
+}
+
+.project-details li a {
+  color: #00ffb9; /* Matches the green accent color */
+  text-decoration: none;
+}
+
+.project-details li a:hover {
+  text-decoration: underline;
+}
+
+.arrow-link {
+  font-size: 24px;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.visit-link:hover .arrow-link {
+  transform: translateX(4px);
+}
+
+.project-details li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+}
+
+.project-details li span {
+  font-weight: bold;
+  color: #888888;
+}
+
+.deliverables-container {
+  max-width: 300px; /* Adjust this width to fit your layout */
+  white-space: normal; /* Allow text to break into multiple lines */
+  word-wrap: break-word; /* Ensures long words are properly wrapped */
+  line-height: 1.5; /* Adjusts the space between lines for readability */
+  text-align: left; /* Ensures text is aligned to the left */
+}

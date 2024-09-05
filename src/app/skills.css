@@ -1,0 +1,35 @@
+/* Skills Section Wrapper */
+.skills-wrapper {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.skills-header {
+  display: flex;
+  align-items: center;
+}
+
+.skills-right {
+  display: flex;
+  flex-wrap: wrap; /* Ensure the chips wrap onto new lines */
+  margin-top: 16px;
+}
+
+/* Green Dot */
+.green-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #00ffb9;
+  border-radius: 50%;
+}

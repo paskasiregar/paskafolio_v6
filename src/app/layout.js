@@ -1,6 +1,14 @@
+import { Plus_Jakarta_Sans } from "@next/font/google"; // Import Plus Jakarta Sans
 import localFont from "next/font/local";
 import "./globals.css";
 
+// Load Plus Jakarta Sans from Google Fonts
+const plusJakartaSans = Plus_Jakarta_Sans({
+  weight: ["400", "500", "700"], // Specify weights as needed
+  subsets: ["latin"],
+});
+
+// Load local fonts: Geist Sans and Geist Mono
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${plusJakartaSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
