@@ -29,7 +29,7 @@ const Skills = () => {
             <h2 className="motivation-title">Skills</h2>
           </div>
           <p className="motivation-subtitle text-lg">
-            Here, you'll find the tools and languages I master. <br />
+            Here, you will find the tools and languages I master. <br />
             From Figma to JavaScript, each skill adds to the mosaic of my
             professional expertise.
           </p>

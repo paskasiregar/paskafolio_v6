@@ -1,6 +1,6 @@
 import React from "react";
 
-const SecButton = ({ text = "LET'S TALK" }) => {
+const SecButton = ({ text = "LETS TALK" }) => {
   return (
     <button className="secbutton">
       <span>{text}</span>

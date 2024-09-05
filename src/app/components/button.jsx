@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-const Button = ({ text = "LET'S TALK" }) => {
+const Button = ({ text = "LETS TALK" }) => {
   return (
     <button className="button">
       <span>{text}</span>

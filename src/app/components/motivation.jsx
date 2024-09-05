@@ -25,7 +25,7 @@ const Motivation = () => {
           <p className="motivation-text text-gray-300 mb-12">
             I get to blend art and technology to create "digital experiences"
             that inform, entertain, and inspire. <br /> Every day is different;
-            one day I may be sketching site layouts on paper, the next I'm
+            one day I may be sketching site layouts on paper, the next I am
             designing responsive page templates. The Product field keeps me on
             my toes!
           </p>
