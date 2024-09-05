@@ -1,4 +1,4 @@
-import { Plus_Jakarta_Sans } from "@next/font/google"; // Import Plus Jakarta Sans
+import { Plus_Jakarta_Sans } from "next/font/google"; // Import Plus Jakarta Sans
 import localFont from "next/font/local";
 import "./globals.css";
 
