@@ -1,12 +1,12 @@
 import React from "react";
-import { ArrowRight } from "solar-icon-set/arrows";
+import { FaArrowRight } from "react-icons/fa";
 
 const Button = ({ text = "LET'S TALK" }) => {
   return (
     <button className="button">
       <span>{text}</span>
       <div className="icon-container">
-        <ArrowRight className="bold-icon" />
+        <FaArrowRight className="bold-icon" />
       </div>
     </button>
   );
