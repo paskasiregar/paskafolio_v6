@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap");
+
 /* global.css */
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -12,7 +13,8 @@ body {
 .button {
   display: flex;
   align-items: center;
-  background-color: #1d1d1d; /* Primary background color */
+  background-color: #1d1d1d;
+  /* Primary background color */
   padding: 12px 24px;
   border-radius: 40px;
   color: #ffffff;
@@ -24,15 +26,18 @@ body {
 }
 
 .button:hover {
-  background-color: #ffffff; /* White on hover */
-  color: #000000; /* Black text on hover */
+  background-color: #ffffff;
+  /* White on hover */
+  color: #000000;
+  /* Black text on hover */
 }
 
 .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #00ffb9; /* Green background for the icon */
+  background-color: #00ffb9;
+  /* Green background for the icon */
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -41,29 +46,36 @@ body {
 }
 
 .button:hover .icon-container {
-  background-color: #00ffb9; /* Keep the green icon background */
+  background-color: #00ffb9;
+  /* Keep the green icon background */
 }
 
 .icon-container svg {
-  color: #000000; /* Icon color black initially */
+  color: #000000;
+  /* Icon color black initially */
   transition: all 0.3s ease;
 }
 
 .button:hover .icon-container svg {
-  color: #000000; /* Keep the icon color black on hover */
+  color: #000000;
+  /* Keep the icon color black on hover */
 }
 
 .bold-icon {
-  width: 20px; /* Adjust width to scale the icon */
-  height: 20px; /* Adjust height to scale the icon */
-  stroke-width: 2.5; /* Make the stroke width thicker if supported */
+  width: 20px;
+  /* Adjust width to scale the icon */
+  height: 20px;
+  /* Adjust height to scale the icon */
+  stroke-width: 2.5;
+  /* Make the stroke width thicker if supported */
 }
 
 .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #00ffb9; /* Green background for the icon */
+  background-color: #00ffb9;
+  /* Green background for the icon */
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -74,7 +86,8 @@ body {
 .secbutton {
   display: flex;
   align-items: center;
-  background-color: #ffffff; /* Primary background color */
+  background-color: #ffffff;
+  /* Primary background color */
   padding: 12px 24px;
   border-radius: 40px;
   color: #000000;
@@ -86,40 +99,46 @@ body {
 }
 
 .experience-wrapper {
-  background-color: #000000; /* Background color */
-  color: #ffffff; /* Text color */
+  background-color: #000000;
+  /* Background color */
+  color: #ffffff;
+  /* Text color */
 }
 
 .experience-header {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .experience-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #333; /* Add a bottom border to each item */
-  padding-bottom: 16px; /* Space between items */
+  align-items: left;
+  border-bottom: 1px solid #333;
+  /* Add a bottom border to each item */
+  padding-bottom: 16px;
+  /* Space between items */
 }
 
 .experience-details h3 {
   margin: 0;
-  font-size: 1.25rem; /* Title size */
+  font-size: 1.25rem;
+  /* Title size */
 }
 
 .experience-details p {
   margin: 0;
-  color: #888888; /* Subtext (location) color */
+  color: #888888;
+  /* Subtext (location) color */
 }
 
 .experience-meta {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .experience-meta .chip {
-  margin-left: 16px;
+  margin-left: 0px;
 }
 
 .chip {
@@ -130,14 +149,19 @@ body {
   border-radius: 20px;
   font-size: 0.875rem;
 }
+
 .footer-line {
   height: 1px;
-  background-color: #141414; /* Color of the line */
+  background-color: #141414;
+  /* Color of the line */
   width: 100%;
-  margin: 20px 0; /* Adjust the margin to your preference */
+  margin: 20px 0;
+  /* Adjust the margin to your preference */
 }
+
 .footer-project-section {
-  background-image: url("/path-to-background-image.jpg"); /* Set your image */
+  background-image: url("/path-to-background-image.jpg");
+  /* Set your image */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -166,12 +190,14 @@ body {
 }
 
 .email-button span {
-  font-size: 1.5rem; /* Adjust for the email icon */
+  font-size: 1.5rem;
+  /* Adjust for the email icon */
 }
 
 .footer-project-section {
   position: relative;
-  height: 300px; /* Adjust the height as needed */
+  height: 300px;
+  /* Adjust the height as needed */
   overflow: hidden;
 }
 
@@ -182,7 +208,8 @@ body {
 }
 
 .image-track img {
-  width: 100%; /* Adjust image width to fill column */
+  width: 100%;
+  /* Adjust image width to fill column */
   object-fit: cover;
 }
 
@@ -198,19 +225,25 @@ body {
 
 @keyframes moveUpwards {
   0% {
-    transform: translateY(100%); /* Start offscreen */
+    transform: translateY(100%);
+    /* Start offscreen */
   }
+
   100% {
-    transform: translateY(-100%); /* Move fully offscreen to the top */
+    transform: translateY(-100%);
+    /* Move fully offscreen to the top */
   }
 }
 
 @keyframes moveDownwards {
   0% {
-    transform: translateY(-100%); /* Start offscreen above */
+    transform: translateY(-100%);
+    /* Start offscreen above */
   }
+
   100% {
-    transform: translateY(100%); /* Move fully offscreen to the bottom */
+    transform: translateY(100%);
+    /* Move fully offscreen to the bottom */
   }
 }
 
@@ -220,18 +253,22 @@ body {
   width: 100%;
   margin: 20px 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 * {
   transition: all 0.3s ease-in-out;
 }
+
 /* global.css */
 @keyframes fadeIn {
   0% {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

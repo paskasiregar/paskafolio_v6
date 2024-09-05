@@ -34,7 +34,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "20px 49px",
+    padding: "20px",
     backgroundColor: "#000000",
     color: "#fff",
   },

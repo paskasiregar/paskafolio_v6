@@ -9,17 +9,15 @@ const Project = ({ project }) => {
   }
 
   return (
-    <section className="">
-      <div className="project-content max-w-6xl mx-auto">
+    <section className="mb-8">
+      <div className="project-content max-w-6xl mx-auto mb-8">
         <div className="chip-container flex justify-between mb-4">
           <Chip label={project?.company || "N/A"} className="mb-4" />
         </div>
 
-        <div className="project-grid flex justify-between">
+        <div className="project-grid">
           {/* Left Section - Project Images */}
-          <div className="project-images w-2/4 pr-6">
-            {" "}
-            {/* 2/3rd width for the images */}
+          <div className="project-images">
             {project?.images?.length > 0 ? (
               project.images.map((image, index) => (
                 <div
@@ -41,9 +39,7 @@ const Project = ({ project }) => {
           </div>
 
           {/* Right Section - Project Information */}
-          <div className="project-info w-100">
-            {" "}
-            {/* Fixed width of 80 (320px) */}
+          <div className="project-info">
             <h3 className="text-3xl font-bold mb-2">
               {project?.title || "No title available"}
             </h3>

@@ -36,8 +36,8 @@ const Experiences = () => {
   ];
 
   return (
-    <section className="experience-wrapper py-16">
-      <div className="experience-content max-w-6xl mx-auto">
+    <section className="experience-wrapper py-4 bg-black text-white">
+      <div className="experience-content max-w-6xl mx-auto px-4">
         {/* Experience List */}
         <div className="experience-list">
           {experienceData.map((experience, index) => (

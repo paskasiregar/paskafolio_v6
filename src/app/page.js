@@ -21,7 +21,7 @@ export default function Home() {
 
         {/* Recent Projects Section */}
         <div>
-          <div className="project-header flex items-center mx-8">
+          <div className="motivation-title flex items-center mx-8">
             <div className="green-dot mr-2"></div>
             <h2 className="text-3xl font-bold text-white">Recent projects</h2>
           </div>
@@ -30,7 +30,7 @@ export default function Home() {
 
         {/* Recent Experiences Section */}
         <div>
-          <div className="project-header flex items-center mx-8">
+          <div className="motivation-title flex items-center mx-8">
             <div className="green-dot mr-2"></div>
             <h2 className="text-3xl font-bold text-white">Work Experience</h2>
           </div>

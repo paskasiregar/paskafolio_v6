@@ -1,6 +1,5 @@
 /* Motivation Wrapper */
 .motivation-wrapper {
-  padding: 40px;
   background-color: #000000;
   color: #fff;
 }
@@ -11,30 +10,31 @@
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .motivation-left {
   flex: 1;
-  max-width: 50%;
-  margin-right: 40px;
+  max-width: 100%;
+  margin-right: 0;
 }
 
 .motivation-right {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 /* Aligning the green dot and title */
 .motivation-header {
   display: flex;
-  align-items: center; /* Vertically align the dot and title */
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .motivation-title {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
-  margin-left: 10px; /* Space between the dot and title */
+  margin-left: 10px;
 }
 
 .green-dot {
@@ -43,4 +43,39 @@
   height: 12px;
   background-color: #00ffb9;
   border-radius: 50%;
+}
+
+/* Responsive Tweaks */
+@media (min-width: 768px) {
+
+  /* Tablet and above */
+  .motivation-content {
+    flex-direction: row;
+  }
+
+  .motivation-left {
+    max-width: 50%;
+    margin-right: 40px;
+    margin-bottom: 4px;
+  }
+
+  .motivation-right {
+    max-width: 50%;
+  }
+
+  .motivation-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Desktop and above */
+  .motivation-title {
+    font-size: 36px;
+  }
+
+  .motivation-content {
+    justify-content: space-between;
+  }
 }

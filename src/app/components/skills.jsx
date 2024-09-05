@@ -42,28 +42,29 @@ const Skills = () => {
       transition={{ duration: 0.8 }}
       className="motivation-wrapper"
     >
-      {" "}
       {/* Using same wrapper as Motivation */}
-      <div className="motivation-content">
-        {" "}
+      <div className="motivation-content max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
         {/* Same layout as Motivation */}
         {/* Left Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="motivation-left"
+          className="motivation-left mb-4 md:mb-0"
         >
           <div className="motivation-header">
             <div className="green-dot"></div>
-            <h2 className="motivation-title">Skills</h2>
+            <h2 className="motivation-title text-2xl md:text-4xl lg:text-4xl">
+              Skills
+            </h2>
           </div>
-          <p className="motivation-subtitle text-lg">
+          <p className="motivation-subtitle text-base md:text-lg lg:text-xl">
             Here, you will find the tools and languages I master. <br />
             From Figma to JavaScript, each skill adds to the mosaic of my
             professional expertise.
           </p>
         </motion.div>
+
         {/* Right Section */}
         <motion.div
           variants={containerVariants}
@@ -71,9 +72,9 @@ const Skills = () => {
           animate="visible"
           className="motivation-right"
         >
-          <div className="skills-right mt-6 flex flex-wrap">
+          <div className="skills-right mt-6 flex flex-wrap justify-center md:justify-start">
             {skills.map((skill, index) => (
-              <motion.div key={index} variants={chipVariants}>
+              <motion.div key={index} variants={chipVariants} className="mb-2">
                 <Chip label={skill} />
               </motion.div>
             ))}

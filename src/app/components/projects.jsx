@@ -47,19 +47,21 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="motivation-wrapper m-0">
-      {" "}
-      {/* Using same wrapper as Motivation */}
-      <div className="motivation-content">
+    <div className="mb-8">
+      <section className="motivation-wrapper my-8 mx-4">
         {" "}
-        {/* Same layout as Motivation */}
-        <div>
-          {projects.map((project, index) => (
-            <Project key={index} project={project} />
-          ))}
+        {/* Using same wrapper as Motivation */}
+        <div className="motivation-content">
+          {" "}
+          {/* Same layout as Motivation */}
+          <div>
+            {projects.map((project, index) => (
+              <Project key={index} project={project} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
