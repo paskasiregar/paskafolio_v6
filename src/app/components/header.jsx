@@ -10,7 +10,7 @@ const homemadeApple = Homemade_Apple({
 
 const Header = () => {
   return (
-    <header style={styles.header}>
+    <header className="header" style={styles.header}>
       <div style={styles.logo}>
         <Link
           href="/"
@@ -21,7 +21,7 @@ const Header = () => {
         </Link>
       </div>
       <div style={styles.contact}>
-        <Link href="/contact">
+        <Link href="#email-section">
           <Button />
         </Link>
       </div>

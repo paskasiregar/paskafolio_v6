@@ -80,7 +80,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto relative z-10 flex flex-col justify-center items-start">
           <h2 className="text-4xl font-bold mb-4">Have a Project in Mind?</h2>
           <p className="text-lg mb-6 max-w-[64%]">
-            I would love to hear from you! Whether you are ready to kickstart a
+            I would love to hear from you. Whether you are ready to kickstart a
             new website or revamp an existing one, I am here to help turn your
             ideas into reality.
           </p>
@@ -98,12 +98,16 @@ const Footer = () => {
       {/* Line before the big section */}
       <div className="footer-line mx-auto"></div>
 
-      <div className="footer-content max-w-6xl mx-auto flex justify-between py-8">
+      <div
+        className="footer-content max-w-6xl mx-auto flex justify-between py-8"
+        id="email-section"
+      >
+        {" "}
+        {/* Add id="email-section" here */}
         {/* Left Section - Email */}
         <div className="footer-email">
           <h2 className="text-4xl font-bold">ask@hellopaska.com</h2>
         </div>
-
         {/* Right Section - Contact Info */}
         <div className="footer-contact text-right">
           <p className="text-xl mb-2 font-bold">Contact</p>

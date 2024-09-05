@@ -1,12 +1,26 @@
+"use client"; // Ensures the component is treated as a client-side component
+
 import React from "react";
+import { motion } from "framer-motion";
 import "../motivation.css";
 import Image from "next/image";
 
 const Motivation = () => {
   return (
-    <section className="motivation-wrapper">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="motivation-wrapper"
+    >
       <div className="motivation-content">
-        <div className="motivation-left">
+        {/* Left Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="motivation-left"
+        >
           <div className="motivation-header">
             <div className="green-dot"></div>
             <h2 className="motivation-title">Motivation</h2>
@@ -15,8 +29,15 @@ const Motivation = () => {
             I am <strong>Paska</strong>, an experienced Full Stack Product
             Manager crafting digital experiences from Indonesia 🇮🇩
           </p>
-        </div>
-        <div className="motivation-right">
+        </motion.div>
+
+        {/* Right Section */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="motivation-right"
+        >
           <p className="motivation-text text-gray-300 mb-12">
             More than a job, Product Management and Product Design is an outlet
             for my vision. I have the power to take an idea from concept to
@@ -36,9 +57,9 @@ const Motivation = () => {
             height={60}
             className="signature-image"
           />
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,5 +1,8 @@
+"use client"; // Ensures the component is treated as a client-side component
+
 import React from "react";
 import Chip from "./chip";
+import { motion } from "framer-motion";
 import "../motivation.css"; // Using motivation.css for consistency
 
 const Skills = () => {
@@ -16,14 +19,41 @@ const Skills = () => {
     "Git Version Control",
   ];
 
+  // Animation variants for staggering
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Delay between each chip's animation
+      },
+    },
+  };
+
+  const chipVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <section className="motivation-wrapper">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="motivation-wrapper"
+    >
       {" "}
       {/* Using same wrapper as Motivation */}
       <div className="motivation-content">
         {" "}
         {/* Same layout as Motivation */}
-        <div className="motivation-left">
+        {/* Left Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="motivation-left"
+        >
           <div className="motivation-header">
             <div className="green-dot"></div>
             <h2 className="motivation-title">Skills</h2>
@@ -33,16 +63,24 @@ const Skills = () => {
             From Figma to JavaScript, each skill adds to the mosaic of my
             professional expertise.
           </p>
-        </div>
-        <div className="motivation-right">
+        </motion.div>
+        {/* Right Section */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="motivation-right"
+        >
           <div className="skills-right mt-6 flex flex-wrap">
             {skills.map((skill, index) => (
-              <Chip key={index} label={skill} />
+              <motion.div key={index} variants={chipVariants}>
+                <Chip label={skill} />
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
