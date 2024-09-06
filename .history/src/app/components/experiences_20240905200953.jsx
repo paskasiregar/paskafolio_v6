@@ -16,12 +16,6 @@ const Experiences = () => {
       timeframe: "2023 - 2024",
     },
     {
-      title: "Founder",
-      location: "Remote 🌍",
-      company: "PawPaw Portal",
-      timeframe: "2023 - Present",
-    },
-    {
       title: "Product Owner & Designer",
       location: "New York, United States of America 🇺🇸",
       company: "ZIZO Technologies",
