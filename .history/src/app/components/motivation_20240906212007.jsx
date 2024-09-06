@@ -13,7 +13,7 @@ const Motivation = () => {
       transition={{ duration: 0.8 }}
       className="motivation-wrapper bg-black py-12"
     >
-      <div className="motivation-content max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="motivation-content max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

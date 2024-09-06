@@ -37,6 +37,7 @@ const projects = [
     images: [
       { src: "/assets/eq-1.png", alt: "Equinox" },
       { src: "/assets/eq-2.png", alt: "Equinox" },
+      { src: "/assets/eq-3.png", alt: "Equinox" },
     ],
   },
 

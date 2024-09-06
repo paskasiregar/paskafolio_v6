@@ -72,7 +72,7 @@ const Skills = () => {
           animate="visible"
           className="motivation-right"
         >
-          <div className="skills-right mt-4 mb-8 flex flex-wrap justify-center md:justify-start">
+          <div className="skills-right mt-6 flex flex-wrap justify-center md:justify-start">
             {skills.map((skill, index) => (
               <motion.div key={index} variants={chipVariants} className="mb-2">
                 <Chip label={skill} />

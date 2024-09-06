@@ -21,8 +21,8 @@ const projects = [
     year: "2024",
     link: "https://getjob.framer.website/",
     images: [
-      { src: "/assets/ypas-1.png", alt: "YPAS GetJob" },
-      { src: "/assets/ypas-2.png", alt: "YPAS GetJob" },
+      { src: "/assets/ypas-3.png", alt: "YPAS GetJob" },
+      { src: "/assets/ypas-4.png", alt: "YPAS GetJob" },
     ],
   },
 
@@ -37,6 +37,7 @@ const projects = [
     images: [
       { src: "/assets/eq-1.png", alt: "Equinox" },
       { src: "/assets/eq-2.png", alt: "Equinox" },
+      { src: "/assets/eq-3.png", alt: "Equinox" },
     ],
   },
 

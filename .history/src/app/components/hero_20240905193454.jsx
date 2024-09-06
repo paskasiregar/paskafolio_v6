@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="hero-wrapper my-20">
+    <section className="hero-wrapper">
       <div className="hero-content">
         <NameCard
           name="Debora Paskarina"

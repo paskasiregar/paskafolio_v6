@@ -5,10 +5,8 @@ const Experience = ({ title, location, company, timeframe }) => {
   return (
     <div className="experience-item my-4 flex flex-col md:flex-row md:text-md justify-between items-start md:items-start">
       {/* Left Section - Job Title and Location */}
-      <div className="experience-details md:text-sm mb-4 md:mb-2 sm:mb-2 sm:text-sm">
-        <h3 className="text-base md:text-sm sm:text-sm font-bold md:mb-2 sm:mb-2">
-          {title}
-        </h3>
+      <div className="experience-details md:text-sm mb-4 md:mb-0 sm:text-sm">
+        <h3 className="text-md md:text-sm font-bold">{title}</h3>
         <p className="text-gray-400">{location}</p>
       </div>
 

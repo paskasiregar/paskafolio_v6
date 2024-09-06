@@ -43,7 +43,7 @@ const Skills = () => {
       className="motivation-wrapper"
     >
       {/* Using same wrapper as Motivation */}
-      <div className="motivation-content max-w-6xl ">
+      <div className="motivation-content max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
         {/* Same layout as Motivation */}
         {/* Left Section */}
         <motion.div
@@ -54,7 +54,7 @@ const Skills = () => {
         >
           <div className="motivation-header">
             <div className="green-dot"></div>
-            <h2 className="motivation-title text-4xl md:text-4xl lg:text-5xl">
+            <h2 className="motivation-title text-2xl md:text-4xl lg:text-4xl">
               Skills
             </h2>
           </div>
@@ -72,7 +72,7 @@ const Skills = () => {
           animate="visible"
           className="motivation-right"
         >
-          <div className="skills-right mt-4 mb-8 flex flex-wrap justify-center md:justify-start">
+          <div className="skills-right mt-6 flex flex-wrap justify-center md:justify-start">
             {skills.map((skill, index) => (
               <motion.div key={index} variants={chipVariants} className="mb-2">
                 <Chip label={skill} />
