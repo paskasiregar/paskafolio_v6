@@ -1,7 +1,6 @@
 import { Plus_Jakarta_Sans } from "next/font/google"; // Import Plus Jakarta Sans
 import localFont from "next/font/local";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 
 // Load Plus Jakarta Sans from Google Fonts
 const plusJakartaSans = Plus_Jakarta_Sans({
