@@ -14,23 +14,12 @@ export default function Home() {
   return (
     <div className="bg-black h-full w-full">
       <Head></Head>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2W451ZN9L3"
-      ></Script>
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-2W451ZN9L3"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2W451ZN9L3');
-  `}
-      </Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-2W451ZN9L3"></Script>
+      <Script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-2W451ZN9L3');</Script>
       {/* Container with a max width for the whole page */}
       <div className="max-w-screen-xl mx-auto px-4">
         <Header />
