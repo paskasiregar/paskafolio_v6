@@ -10,16 +10,16 @@ const Experiences = () => {
       timeframe: "2024 - Present",
     },
     {
-      title: "Product Consultant",
-      location: "Dubai, United Arab Emiratesa 🇦🇪",
-      company: "Kiwi Studio",
-      timeframe: "2024 - Present",
-    },
-    {
       title: "Senior Product Manager",
       location: "Selangor, Malaysia 🇲🇾",
       company: "Nematix",
       timeframe: "2023 - 2024",
+    },
+    {
+      title: "Founder",
+      location: "Remote 🌍",
+      company: "PawPaw Portal",
+      timeframe: "2023 - Present",
     },
     {
       title: "Product Owner & Designer",
