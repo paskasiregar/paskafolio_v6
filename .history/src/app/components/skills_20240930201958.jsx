@@ -53,7 +53,7 @@ const Skills = () => {
           className="motivation-left mb-4 md:mb-0"
         >
           <div className="motivation-header">
-            <div className="green-dot mr-2"></div>
+            <div className="green-dot mr-4"></div>
             <h2 className="motivation-title text-4xl md:text-4xl lg:text-5xl">
               Skills
             </h2>

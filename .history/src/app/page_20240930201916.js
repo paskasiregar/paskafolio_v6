@@ -40,16 +40,16 @@ export default function Home() {
         <Skills />
 
         {/* Recent Experiences Section */}
-        <div>
+        <div className="max-w-screen-xl mx-auto px-4">
           <div className="motivation-title flex items-center mx-8">
-            <div className="green-dot mr-2 "></div>
+            <div className="green-dot mr-4"></div>
             <h2 className="text-3xl font-bold text-white">Work Experience</h2>
           </div>
           <Experiences />
         </div>
 
         {/* Recent Projects Section */}
-        <div>
+        <div className="max-w-screen-xl mx-auto px-4">
           <div className="motivation-title flex items-center mx-8">
             <div className="green-dot mr-2"></div>
             <h2 className="text-3xl font-bold text-white">Recent projects</h2>
