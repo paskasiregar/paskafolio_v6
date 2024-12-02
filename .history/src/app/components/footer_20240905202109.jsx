@@ -90,7 +90,7 @@ const Footer = () => {
             ideas into reality.
           </p>
           <Link
-            href="mailto:debora.paskarina@gmail.com"
+            href="mailto:ask@hellopaska.com"
             className="email-button items-center justify-center"
           >
             <button
@@ -113,9 +113,7 @@ const Footer = () => {
       >
         {/* Left Section - Email */}
         <div className="footer-email mb-6 md:mb-0 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            debora.paskarina@gmail.com
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold">ask@hellopaska.com</h2>
         </div>
 
         {/* Right Section - Contact Info */}
